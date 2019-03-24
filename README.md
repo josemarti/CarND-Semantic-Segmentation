@@ -11,7 +11,7 @@ The code is included in the main.py file.
 A VGG-16 pre-trained is use for the first half of the network (encoder). 
 The second half or decoder is defined in the code and is composed of transposed convolutions to upscale the feature maps and produce the segmentation image. 
 
-In order to improve the performance we use skip connections. Adding convolutionla layer 4 and 3 from previous VGG network to deconvolutional layers from 1st convolutional layer and from 1st skip layer respectively.
+In order to improve the performance we use skip connections. Adding convolutional layer 4 and 3 from previous VGG network to deconvolutional layers from 1st convolutional layer and from 1st skip layer respectively.
 
 We use cross-entropy as the loss function with Adam optimizer.
 
@@ -54,8 +54,8 @@ The project labels most pixels of roads close to the best solution. The model do
 
 ## Conclusion
 
-Course lessons are complete and they accomplish the educational purpose of understanding the algorithms. However, once you try to translate this knowledge in to a piece of code things turn out to be a bit more difficult.
-The good thing is that the Quizzes and the Udacity walkthrough are very helpful (and key) to successfully accomplish this project.
+Despite the small dataset used the result are quite impressive. 
+Course lessons are complete and they accomplish the educational purpose of understanding the algorithms. However, once you try to translate this knowledge in to a piece of code things turn out to be a bit more difficult. The good thing is that the Quizzes and the Udacity walkthrough are very helpful (and key) to successfully accomplish this project.
 
 
 
