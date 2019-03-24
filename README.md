@@ -23,36 +23,37 @@ The following hyperparameters were used:
 - epochs: 40
 - batch_size: 8
 
-## Project Specification
+## Project Specification
 
-## Build the Neural Network
+### Build the Neural Network
 
-#### Does the project load the pretrained vgg model?
+#### Does the project load the pretrained vgg model?
 The function load_vgg is implemented correctly.
 
-#### Does the project learn the correct features from the images?
+#### Does the project learn the correct features from the images?
 The function layers is implemented correctly.
 
-#### Does the project optimize the neural network?
-	The function optimize is implemented correctly.
+#### Does the project optimize the neural network?
+The function optimize is implemented correctly.
 
-#### Does the project train the neural network?	
+#### Does the project train the neural network?	
 The function train_nn is implemented correctly. The loss of the network should be printed while the network is training.
 
-## Neural Network Training
+### Neural Network Training
 
-#### Does the project train the model correctly?	
+#### Does the project train the model correctly?	
 On average, the model decreases loss over time.
 
-#### Does the project use reasonable hyperparameters?	
+#### Does the project use reasonable hyperparameters?	
 The number of epoch and batch size are set to a reasonable number.
 
-#### Does the project correctly label the road?
+#### Does the project correctly label the road?
 The project labels most pixels of roads close to the best solution. The model doesn't have to predict correctly all the images, just most of them. A solution that is close to best would label at least 80% of the road and label no more than 20% of non-road pixels as road.
 
-## Conclusion
+## Conclusion
 
-
+Course lessons are complete and they accomplish the educational purpose of understanding the algorithms. However, once you try to translate this knowledge in to a piece of code things turn out to be a bit more difficult.
+The good thing is that the Quizzes and the Udacity walkthrough are very helpful (and key) to successfully accomplish this project.
 
 
 
