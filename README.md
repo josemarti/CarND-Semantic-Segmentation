@@ -18,14 +18,14 @@ In order to improve the performance we use skip connections. Adding convolutionl
 We use cross-entropy as the loss function with Adam optimizer.
 
 The following hyperparameters were used:
-•	keep_prob: 0.5
-•	learning_rate: 0.0001
-•	epochs: 40
-•	batch_size: 8
+- keep_prob: 0.5
+- learning_rate: 0.0001
+- epochs: 40
+- batch_size: 8
 
 ## Project Specification
 
-### Build the Neural Network
+## Build the Neural Network
 
 #### Does the project load the pretrained vgg model?
 The function load_vgg is implemented correctly.
