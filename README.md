@@ -1,4 +1,4 @@
-# CarND-Semanti-Segmentation-Project - Jose C. Marti
+# CarND-Semantic-Segmentation-Project - Jose C. Marti
 ## Self-Driving Car Engineer Nanodegree Program.
 
 ## Overview
@@ -9,13 +9,54 @@ This is the 2nd project of the Term 3. In this project we have to write the pyth
 
 ## Description
 
+The code is included in the main.py file.
+A VGG-16 pre-trained is use for the first half of the network (encoder). 
+The second half or decoder is defined in the code and is composed of transposed convolutions to upscale the feature maps and produce the segmentation image. 
+
+In order to improve the performance we use skip connections. Adding convolutionla layer 4 and 3 from previous VGG network to deconvolutional layers from 1st convolutional layer and from 1st skip layer respectively.
+
+We use cross-entropy as the loss function with Adam optimizer.
+
+The following hyperparameters were used:
+•	keep_prob: 0.5
+•	learning_rate: 0.0001
+•	epochs: 40
+•	batch_size: 8
+
+## Project Specification
+
+### Build the Neural Network
+
+#### Does the project load the pretrained vgg model?
+The function load_vgg is implemented correctly.
+
+#### Does the project learn the correct features from the images?
+The function layers is implemented correctly.
+
+#### Does the project optimize the neural network?
+	The function optimize is implemented correctly.
+
+#### Does the project train the neural network?	
+The function train_nn is implemented correctly. The loss of the network should be printed while the network is training.
+
+## Neural Network Training
+
+#### Does the project train the model correctly?	
+On average, the model decreases loss over time.
+
+#### Does the project use reasonable hyperparameters?	
+The number of epoch and batch size are set to a reasonable number.
+
+#### Does the project correctly label the road?
+The project labels most pixels of roads close to the best solution. The model doesn't have to predict correctly all the images, just most of them. A solution that is close to best would label at least 80% of the road and label no more than 20% of non-road pixels as road.
+
+## Conclusion
 
 
 
 
 
-
-
+J. C. Marti
 
 -------------------------------
 
