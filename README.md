@@ -8,8 +8,8 @@ This is the 2nd project of the Term 3. In this project we have to write the pyth
 ## Description
 
 The code is included in the main.py file.
-A VGG-16 pre-trained is use for the first half of the network (encoder). 
-The second half or decoder is defined in the code and is composed of transposed convolutions to upscale the feature maps and produce the segmentation image. 
+A VGG-16 pre-trained is used for the first half of the network (encoder). 
+The second half or decoder is defined in the code, and is composed of transposed convolutions to upscale the feature maps and produce the segmentation image. 
 
 In order to improve the performance we use skip connections. Adding convolutional layer 4 and 3 from previous VGG network to deconvolutional layers from 1st convolutional layer and from 1st skip layer respectively.
 
@@ -35,17 +35,17 @@ The function layers is implemented correctly.
 The function optimize is implemented correctly.
 
 #### Does the project train the neural network?	
-The function train_nn is implemented correctly. The loss of the network should be printed while the network is training.
+The function train_nn is implemented correctly. The loss of the network is printed while the network is training.
 
 ### Neural Network Training
 
 #### Does the project train the model correctly?	
-On average, the model decreases loss over time.
+The model decreases loss over time.
 
 ![pic](pic.png)
 
 #### Does the project use reasonable hyperparameters?	
-The number of epoch and batch size are set to a reasonable number.
+The number of epoch and batch size are set to 40 and 8 respectively.
 
 #### Does the project correctly label the road?
 The project labels most pixels of roads close to the best solution. The model doesn't have to predict correctly all the images, just most of them. A solution that is close to best would label at least 80% of the road and label no more than 20% of non-road pixels as road.
