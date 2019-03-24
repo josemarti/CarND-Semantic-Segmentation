@@ -1,3 +1,24 @@
+# CarND-Semanti-Segmentation-Project - Jose C. Marti
+## Self-Driving Car Engineer Nanodegree Program.
+
+## Overview
+
+This is the 2nd project of the Term 3. In this project we have to write the python code that defines a Fully Convolutional Neural Network that has to be able to classify the pixels of a series of images to identify the drivable area.
+
+![pic](snap.png)
+
+## Description
+
+
+
+
+
+
+
+
+
+-------------------------------
+
 # Semantic Segmentation
 ### Introduction
 In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
